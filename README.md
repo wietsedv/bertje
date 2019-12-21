@@ -1,6 +1,8 @@
-# 🇳🇱 BERTje: A Dutch BERT model
+# BERTje: A Dutch BERT model
 
 BERTje is a Dutch pre-trained BERT model developed at the University of Groningen.
+
+<img src="/bertje.png" height="250">
 
 For details, check out our paper on arxiv: *Coming soon*
 
