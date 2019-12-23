@@ -4,7 +4,7 @@ BERTje is a Dutch pre-trained BERT model developed at the University of Groninge
 
 <img src="/bertje.png" height="250">
 
-For details, check out our paper on arxiv: *Coming soon*
+For details, check out our paper on arxiv: https://arxiv.org/abs/1912.09582
 
 
 ## Download
@@ -24,4 +24,13 @@ Research supported with Cloud TPUs from Google's TensorFlow Research Cloud (TFRC
 
 Do you use BERTje for a publication? Please use the following citation:
 
-*Coming soon*
+```
+@misc{vries2019bertje,
+    title={BERTje: A Dutch BERT Model},
+    author={Wietse de Vries and Andreas van Cranenburgh and Arianna Bisazza and Tommaso Caselli and Gertjan van Noord and Malvina Nissim},
+    year={2019},
+    eprint={1912.09582},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
