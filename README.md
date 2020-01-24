@@ -7,6 +7,19 @@ BERTje is a Dutch pre-trained BERT model developed at the University of Groninge
 For details, check out our paper on arxiv: https://arxiv.org/abs/1912.09582
 
 
+## Transformers
+
+Get started with [Transformers](https://github.com/huggingface/transformers) with the following snippet:
+
+```
+from transformers import BertTokenizer, BertModel
+
+tokenizer = BertTokenizer.from_pretrained("wietsedv/bert-base-dutch-cased")
+model = BertModel.from_pretrained("wietsedv/bert-base-dutch-cased", do_lower_case=False)
+```
+
+That's all! Check out the [Transformers documentation](https://huggingface.co/transformers/model_doc/bert.html) for further instructions.
+
 ## Download
 Download the model here:
 
