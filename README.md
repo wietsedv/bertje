@@ -41,8 +41,8 @@ All of the tested models are *base* sized (12) layers with cased tokenization.
 
 | Model  | [UDv2.5 LassySmall](https://universaldependencies.org/treebanks/nl_lassysmall/index.html) |
 | --- | --- |
-| **BERTje** | 96.48 |
-| [mBERT](https://github.com/google-research/bert/blob/master/multilingual.md)   | **96.49** |
+| **BERTje** | **96.48** |
+| [mBERT](https://github.com/google-research/bert/blob/master/multilingual.md)   | 96.20 |
 | [BERT-NL](http://textdata.nl) | 96.10 |
 | [RobBERT](https://github.com/iPieter/RobBERT) | 95.91 |
 
