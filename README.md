@@ -35,7 +35,7 @@ All of the tested models are *base* sized (12) layers with cased tokenization.
 | **BERTje** | **90.24** | **84.93** |
 | [mBERT](https://github.com/google-research/bert/blob/master/multilingual.md)   | 88.61 | 84.19 |
 | [BERT-NL](http://textdata.nl) | 85.05 | 80.45 |
-| [RobBERT](https://github.com/iPieter/RobBERT) | 84.72 | - |
+| [RobBERT](https://github.com/iPieter/RobBERT) | 84.72 | 81.98 |
 
 ### Part-of-speech tagging
 
