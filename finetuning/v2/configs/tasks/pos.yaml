@@ -1,0 +1,11 @@
+model:
+  do_train: false
+  do_export: true
+
+data:
+  cfgs:
+    - "data/udlassy-pos"
+    - "data/lassysmall-pos"
+
+summary:
+  method: "accuracy"

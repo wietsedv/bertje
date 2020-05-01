@@ -1,0 +1,4 @@
+model:
+  shortname: "multi"
+  name: "bert-base-multilingual-cased"
+  type: "bert"

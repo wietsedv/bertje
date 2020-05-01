@@ -1,0 +1,4 @@
+model:
+  shortname: "bertnl"
+  name: "bert-nl"
+  type: "bert"

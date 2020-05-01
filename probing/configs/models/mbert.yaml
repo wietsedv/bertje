@@ -1,0 +1,2 @@
+model: ["bert-base-multilingual-cased"]
+model_name: ["mbert"]

@@ -1,0 +1,13 @@
+data:
+  name: "lassysmall-pos"
+  input: "data/lassysmall-pos"
+  num_labels: 211
+
+train:
+  max_epochs: 80
+  attention_dropout: 0.4
+  hidden_dropout: 0.4
+
+# optimizer:
+#   warmup_steps: 256
+#   learning_rate: 0.00001

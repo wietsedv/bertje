@@ -1,0 +1,7 @@
+data:
+  name: "sonar-ner"
+  input: "data/sonar-ner"
+  num_labels: 13
+
+train:
+  max_epochs: 90

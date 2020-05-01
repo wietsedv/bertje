@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+autopep8 = "*"
+
+[packages]
+transformers = "*"
+torch = "*"
+pyyaml = "*"
+scikit-learn = "*"
+scipy = "*"
+tqdm = "*"
+tensorboard = "*"
+
+[requires]
+python_version = "3.8"

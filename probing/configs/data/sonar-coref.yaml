@@ -1,0 +1,8 @@
+task_name: "sonar-coref"
+task_data: "sonar-coref"
+
+task_format: "conll-2012"
+
+label_map: ["true", "false"]
+spans: 2
+# lazy: true

@@ -1,0 +1,23 @@
+task_name: "udlassy-pos"
+task_data: "udlassy-pos"
+
+task_format: "token"
+label_map:
+  [
+    "adj",
+    "adp",
+    "adv",
+    "aux",
+    "cconj",
+    "det",
+    "intj",
+    "noun",
+    "num",
+    "pron",
+    "propn",
+    "punct",
+    "sconj",
+    "sym",
+    "verb",
+    "x",
+  ]

@@ -1,0 +1,49 @@
+verbose: True
+sample: False
+train: False
+export: False
+report: False
+dry_run: False
+pbar: True
+lazy: False
+
+num_workers: 1
+
+layer_mode: "mix" # single or mix (cumulative scalar mix)
+layer_range: [0, 13] # 0: lexical embedding, 1-12: transformer layers
+skip_embed: 0
+reverse_layers: False
+spans: 1
+
+model: ["bert-base-dutch-cased", "bert-base-multilingual-cased"]
+model_name: ["bertje", "mbert"]
+random_weights: False
+
+data:
+  path: "data"
+  logdir: "logs"
+
+max_pieces: 5
+
+name: "v0"
+
+hparams:
+  n_input: 768
+  n_hidden: 256
+  in_dropout: 0.2
+  num_layers: 2
+  rnn_dropout: 0.3
+  hidden_dropout: 0.2
+  out_layer: True
+  type: "lstm"
+  bidirectional: True
+  lr: 0.0001
+  weight_decay: 0.01
+  batch_size: 32
+  eval_batch_size: 64
+  optimizer: "adam"
+
+steps:
+  log_interval: 500
+  val_interval: 1000
+  patience: 20

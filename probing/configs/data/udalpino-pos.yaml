@@ -1,0 +1,28 @@
+task_name: "udalpino-pos"
+task_data: "udalpino"
+
+task_format: "conllu"
+spans: 1
+
+token_column: 1
+label_column: 3
+
+label_map:
+  [
+    "adj",
+    "adp",
+    "adv",
+    "aux",
+    "cconj",
+    "det",
+    "intj",
+    "noun",
+    "num",
+    "pron",
+    "propn",
+    "punct",
+    "sconj",
+    "sym",
+    "verb",
+    "x",
+  ]

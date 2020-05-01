@@ -1,0 +1,7 @@
+data:
+  name: "goeievraag-qsim"
+  input: "data/goeievraag-qsim"
+  num_labels: 1
+  token_level: false
+  num_sents: 2
+  dev: false

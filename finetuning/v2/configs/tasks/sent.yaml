@@ -1,0 +1,11 @@
+model:
+  do_train: false
+  do_export: true
+
+data:
+  cfgs:
+    - "data/110kdbrd"
+    - "data/110kdbrd-2"
+
+summary:
+  type: "test"

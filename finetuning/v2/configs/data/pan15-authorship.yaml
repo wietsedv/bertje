@@ -1,0 +1,7 @@
+data:
+  name: "pan15-authorship"
+  input: "data/pan15-authorship"
+  num_labels: 100
+  token_level: false
+  verify: true
+  # make_binary: true

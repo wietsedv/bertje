@@ -1,0 +1,70 @@
+verbose: true
+force: false
+
+model:
+  cfgs: ["models/bertje", "models/multi", "models/bertnl", "models/robbert"]
+  name: null
+  type: null
+  checkpoint: -1
+  lower_case: false
+  device: "cuda"
+  do_train: true
+  do_export: true
+
+data:
+  cfgs:
+    - "data/udlassy-pos"
+    - "data/lassysmall-pos"
+
+    - "data/conll2002-ner"
+    - "data/sonar-ner"
+    - "data/udlassy-ner"
+
+    - "data/110kdbrd"
+    - "data/110kdbrd-2"
+
+    - "data/twisty"
+    - "data/twisty2"
+    - "data/twisty3"
+    - "data/twisty-merge-4"
+    - "data/twisty4-merge-4"
+  name: null
+  input: null
+  cache: "cache/{}-{}"
+  output: "output/{}-{}"
+  logs: "logs/{}-{}"
+  num_labels: null
+  token_level: true
+  num_sents: 1
+  verify: false
+  dev: true
+  clip_start: false
+  merge: null
+
+train:
+  seed: 42323
+  max_epochs: 80
+  batch_size: 6
+  max_grad_norm: 1.0
+  attention_dropout: 0.2
+  hidden_dropout: 0.3
+  gradient_accumulation_steps: 4
+  logging_steps: 0.1
+  eval_steps: 0.25
+
+eval:
+  batch_size: 64
+
+summary:
+  type: "dev"
+  method: "accuracy"
+  groups: false
+  probs: false
+
+optimizer:
+  warmup_steps: 512
+  learning_rate: 0.00005
+  adam_epsilon: 0.00000001
+  weight_decay: 0.05
+  max_grad_norm: 1.0
+  # label_smoothing: 0.03

@@ -1,0 +1,50 @@
+task_name: "udalpino-dep"
+task_data: "udalpino"
+
+task_format: "conllu-edges"
+spans: 2
+
+id_column: 0
+token_column: 1
+head_column: 6
+label_column: 7
+
+label_map:
+  [
+    "_",
+    "acl",
+    "acl:relcl",
+    "advcl",
+    "advmod",
+    "amod",
+    "appos",
+    "aux",
+    "aux:pass",
+    "case",
+    "cc",
+    "ccomp",
+    "compound:prt",
+    "conj",
+    "cop",
+    "csubj",
+    "det",
+    "expl",
+    "expl:pv",
+    "fixed",
+    "flat",
+    "iobj",
+    "mark",
+    "nmod",
+    "nmod:poss",
+    "nsubj",
+    "nsubj:pass",
+    "nummod",
+    "obj",
+    "obl",
+    "obl:agent",
+    "orphan",
+    "parataxis",
+    "punct",
+    "root",
+    "xcomp",
+  ]

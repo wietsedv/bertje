@@ -1,0 +1,4 @@
+data:
+  name: "conll2002-ner"
+  input: "data/conll2002-ner"
+  num_labels: 9

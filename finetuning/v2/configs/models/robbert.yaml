@@ -1,0 +1,4 @@
+model:
+  shortname: "robbert"
+  name: "pdelobelle/robBERT-base"
+  type: "roberta"

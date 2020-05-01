@@ -1,0 +1,12 @@
+data:
+  name: "110kdbrd-2"
+  input: "data/110kdbrd"
+  num_labels: 2
+  token_level: false
+  dev: false
+  clip_start: true
+
+train:
+  max_epochs: 40
+  attention_dropout: 0.4
+  hidden_dropout: 0.4

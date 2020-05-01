@@ -1,0 +1,2 @@
+model: ["bert-base-dutch-cased"] # ["bert-base-dutch-cased", "bert-base-multilingual-cased"]
+model_name: ["bertje"] # ["bertje", "mbert"]

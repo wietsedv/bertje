@@ -1,0 +1,7 @@
+task_name: "conll2002-ner"
+task_data: "conll2002-ner"
+
+task_format: "token-bio"
+label_map: ["loc", "misc", "org", "per", "O"]
+outside_span_prob: 1.0
+outside_span_range: [1, 3]

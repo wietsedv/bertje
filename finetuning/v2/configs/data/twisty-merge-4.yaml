@@ -1,0 +1,14 @@
+data:
+  name: "twisty-merge-4"
+  input: "data/twisty3"
+  num_labels: 2
+  token_level: false
+  dev: true
+  merge: 4
+
+train:
+  max_epochs: 40
+
+summary:
+  groups: true
+  probs: true

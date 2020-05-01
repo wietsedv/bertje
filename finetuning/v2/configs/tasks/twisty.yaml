@@ -1,0 +1,16 @@
+model:
+  do_train: false
+  do_export: true
+
+data:
+  cfgs:
+    - "data/twisty"
+    - "data/twisty2"
+    - "data/twisty3"
+    - "data/twisty-merge-4"
+    - "data/twisty4-merge-4"
+  dev: true
+
+summary:
+  # method: "conlleval"
+  method: "groupacc"

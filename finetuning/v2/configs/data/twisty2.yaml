@@ -1,0 +1,13 @@
+data:
+  name: "twisty2"
+  input: "data/twisty2"
+  num_labels: 2
+  token_level: false
+  dev: true
+
+train:
+  max_epochs: 40
+
+summary:
+  groups: true
+  probs: true

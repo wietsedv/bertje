@@ -1,0 +1,13 @@
+model:
+  do_train: false
+  do_export: true
+
+data:
+  cfgs:
+    - "data/conll2002-ner"
+    - "data/sonar-ner"
+    - "data/udlassy-ner"
+
+summary:
+  method: "conlleval"
+  # method: "microcat"

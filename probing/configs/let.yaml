@@ -1,0 +1,5 @@
+data:
+  path: "/net/shared/wietse/Bertje/probing-data"
+  logdir: "logs"
+
+num_workers: 1

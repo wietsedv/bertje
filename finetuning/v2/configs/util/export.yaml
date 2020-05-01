@@ -1,0 +1,3 @@
+model:
+  do_train: false
+  do_export: true

@@ -1,0 +1,8 @@
+data:
+  name: "udlassy-ner"
+  input: "data/udlassy-ner-bio"
+  num_labels: 36
+
+train:
+  attention_dropout: 0.4
+  hidden_dropout: 0.4

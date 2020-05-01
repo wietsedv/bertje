@@ -1,0 +1,13 @@
+data:
+  name: "udlassy-pos"
+  input: "data/udlassy-pos"
+  num_labels: 17
+
+train:
+  max_epochs: 200
+#   attention_dropout: 0.2
+#   hidden_dropout: 0.2
+
+# optimizer:
+#   warmup_steps: 256
+#   learning_rate: 0.00001
