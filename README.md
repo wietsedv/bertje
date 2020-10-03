@@ -58,12 +58,16 @@ Headers in the tables below link to original data sources. Scores link to the mo
 
 
 ## Download
-Download the model here:
+The recommended download method is using the Transformers library. The model is available at the [model hub](https://huggingface.co/wietsedv/bert-base-dutch-cased).
+
+You can manually download the model files here:
 
  - BERT-base, cased (12-layer, 768-hidden, 12-heads, 110M parameters)
-   - [`bert-base-dutch-cased.zip`](https://bertje.s3.eu-central-1.amazonaws.com/v1/bert-base-dutch-cased.zip) (1.5GB) ([`vocab.txt`](https://bertje.s3.eu-central-1.amazonaws.com/v1/vocab.txt) • [`config.json`](https://bertje.s3.eu-central-1.amazonaws.com/v1/config.json))
+   - [`pytorch_model.bin`](https://cdn.huggingface.co/wietsedv/bert-base-dutch-cased/pytorch_model.bin) (1.5GB) ([`vocab.txt`](https://cdn.huggingface.co/wietsedv/bert-base-dutch-cased/vocab.txt) • [`config.json`](https://s3.amazonaws.com/models.huggingface.co/bert/wietsedv/bert-base-dutch-cased/config.json))
 
 The model is fully compatible with [Transformers](https://github.com/huggingface/transformers) and interchangable with [original](https://github.com/google-research/bert#pre-trained-models) BERT checkpoints.
+
+Thanks to HuggingFace for hosting the model files.
 
 
 ## Code
