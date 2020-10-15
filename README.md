@@ -20,8 +20,9 @@ BERTje is the default Dutch BERT model in [Transformers](https://github.com/hugg
 ```
 from transformers import BertTokenizer, BertModel
 
-tokenizer = BertTokenizer.from_pretrained("wietsedv/bert-base-dutch-cased")
-model = BertModel.from_pretrained("wietsedv/bert-base-dutch-cased")
+tokenizer = AutoTokenizer.from_pretrained("wietsedv/bert-base-dutch-cased")
+model = AutoModel.from_pretrained("wietsedv/bert-base-dutch-cased")  # PyTorch
+model = TFAutoModel.from_pretrained("wietsedv/bert-base-dutch-cased")  # Tensorflow
 ```
 
 That's all! Check out the [Transformers documentation](https://huggingface.co/transformers/model_doc/bert.html) for further instructions.
