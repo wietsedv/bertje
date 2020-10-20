@@ -17,7 +17,7 @@ For details, check out our paper on arxiv: https://arxiv.org/abs/1912.09582
 
 BERTje is the default Dutch BERT model in [Transformers](https://github.com/huggingface/transformers)! You can start using it with the following snippet:
 
-```
+```python
 from transformers import BertTokenizer, BertModel, TFAutoModel
 
 tokenizer = AutoTokenizer.from_pretrained("wietsedv/bert-base-dutch-cased")
