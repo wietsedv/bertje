@@ -10,7 +10,7 @@ For details, check out our paper on arxiv: https://arxiv.org/abs/1912.09582
 ## Publications with BERTje
 
   - [BERTje: A Dutch BERT Model](https://arxiv.org/abs/1912.09582)
-  - [What's so special about BERT's layers? A closer look at the NLP pipeline in monolingual and multilingual models](https://arxiv.org/abs/2004.06499)
+  - [What's so special about BERT's layers? A closer look at the NLP pipeline in monolingual and multilingual models](https://www.aclweb.org/anthology/2020.findings-emnlp.389)
 
 
 ## Transformers
@@ -84,30 +84,27 @@ Research supported with Cloud TPUs from Google's TensorFlow Research Cloud (TFRC
 
 Please use the following citation if you use BERTje or our fine-tuned models:
 
-```
-@article{vries_bertje_2019,
+```bibtex
+@misc{devries2019bertje,
 	title = {{BERTje}: {A} {Dutch} {BERT} {Model}},
-	copyright = {All rights reserved},
 	shorttitle = {{BERTje}},
-	url = {http://arxiv.org/abs/1912.09582},
-	journal = {arXiv:1912.09582 [cs]},
-	author = {Vries, Wietse de and Cranenburgh, Andreas van and Bisazza, Arianna and Caselli, Tommaso and Noord, Gertjan van and Nissim, Malvina},
+	author = {de Vries, Wietse  and  van Cranenburgh, Andreas  and  Bisazza, Arianna  and  Caselli, Tommaso  and  Noord, Gertjan van  and  Nissim, Malvina},
+	year = {2019},
 	month = dec,
-	year = {2019}
+	howpublished = {arXiv:1912.09582},
+	url = {http://arxiv.org/abs/1912.09582},
 }
 ```
 
 Use the following citation if you use anything from the probing classifiers:
 
-```
-@article{de_vries_whats_2020,
+```bibtex
+@inproceedings{devries2020bertlayers,
 	title = {What's so special about {BERT}'s layers? {A} closer look at the {NLP} pipeline in monolingual and multilingual models},
-	copyright = {All rights reserved},
-	shorttitle = {What's so special about {BERT}'s layers?},
-	url = {http://arxiv.org/abs/2004.06499},
-	journal = {arXiv:2004.06499 [cs]},
-	author = {de Vries, Wietse and van Cranenburgh, Andreas and Nissim, Malvina},
-	month = apr,
+	author = {de Vries, Wietse  and  van Cranenburgh, Andreas  and  Nissim, Malvina},
 	year = {2020},
+	booktitle = {Findings of EMNLP},
+	pages = {4339--4350},
+	url = {https://www.aclweb.org/anthology/2020.findings-emnlp.389},
 }
 ```
