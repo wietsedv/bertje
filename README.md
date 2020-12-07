@@ -4,7 +4,7 @@ BERTje is a Dutch pre-trained BERT model developed at the University of Groninge
 
 <img src="/bertje.png" height="250">
 
-For details, check out our paper on arxiv: https://arxiv.org/abs/1912.09582
+For details, check out our paper on arXiv: https://arxiv.org/abs/1912.09582
 
 
 ## Publications with BERTje
@@ -15,21 +15,37 @@ For details, check out our paper on arxiv: https://arxiv.org/abs/1912.09582
 
 ## Transformers
 
-BERTje is the default Dutch BERT model in [Transformers](https://github.com/huggingface/transformers)! You can start using it with the following snippet:
+You can play with BERTje without any training with the following snippet (or use the [hosted version by Huggingface](https://huggingface.co/GroNLP/bert-base-dutch-cased?text=Ik+wou+dat+ik+een+%5BMASK%5D+was.)):
 
 ```python
-from transformers import BertTokenizer, BertModel, TFAutoModel
+from transformers import pipeline
 
-tokenizer = AutoTokenizer.from_pretrained("wietsedv/bert-base-dutch-cased")
-model = AutoModel.from_pretrained("wietsedv/bert-base-dutch-cased")  # PyTorch
-model = TFAutoModel.from_pretrained("wietsedv/bert-base-dutch-cased")  # Tensorflow
+pipe = pipeline('fill-mask', model='GroNLP/bert-base-dutch-cased')
+for res in pipe('Ik wou dat ik een [MASK] was.'):
+    print(res['sequence'])
+    
+# [CLS] Ik wou dat ik een kind was. [SEP]
+# [CLS] Ik wou dat ik een mens was. [SEP]
+# [CLS] Ik wou dat ik een vrouw was. [SEP]
+# [CLS] Ik wou dat ik een man was. [SEP]
+# [CLS] Ik wou dat ik een vriend was. [SEP]
+```
+
+If you want to actually train your own model based on BERTje, you can load the tokenizer and model with this snippet:
+
+```python
+from transformers import AutoTokenizer, AutoModel, TFAutoModel
+
+tokenizer = AutoTokenizer.from_pretrained("GroNLP/bert-base-dutch-cased")
+model = AutoModel.from_pretrained("GroNLP/bert-base-dutch-cased")  # PyTorch
+model = TFAutoModel.from_pretrained("GroNLP/bert-base-dutch-cased")  # Tensorflow
 ```
 
 That's all! Check out the [Transformers documentation](https://huggingface.co/transformers/model_doc/bert.html) for further instructions.
 
 ## Benchmarks
 
-The Arxiv paper lists benchmarks. Here are a couple of comparisons between BERTje, multilingual BERT, BERT-NL and RobBERT that were done after writing the paper. Unlike some other comparisons, the fine-tuning procedures for these benchmarks are identical for each pre-trained model. You may be able to achieve higher scores for individual models by optimizing fine-tuning procedures.
+The arXiv paper lists benchmarks. Here are a couple of comparisons between BERTje, multilingual BERT, BERT-NL and RobBERT that were done after writing the paper. Unlike some other comparisons, the fine-tuning procedures for these benchmarks are identical for each pre-trained model. You may be able to achieve higher scores for individual models by optimizing fine-tuning procedures.
 
 More experimental results will be added to this page when they are finished. Technical details about how a fine-tuned these models will be published later as well as downloadable fine-tuned checkpoints.
 
