@@ -1,16 +1,25 @@
 # BERTje: A Dutch BERT model
 
+[Wietse de Vries](https://www.semanticscholar.org/author/Wietse-de-Vries/144611157) •
+[Andreas van Cranenburgh](https://www.semanticscholar.org/author/Andreas-van-Cranenburgh/2791585) •
+[Arianna Bisazza](https://www.semanticscholar.org/author/Arianna-Bisazza/3242253) •
+[Tommaso Caselli](https://www.semanticscholar.org/author/Tommaso-Caselli/1864635) •
+[Gertjan van Noord](https://www.semanticscholar.org/author/Gertjan-van-Noord/143715131) •
+[Malvina Nissim](https://www.semanticscholar.org/author/M.-Nissim/2742475)
+
+## Model description
+
 BERTje is a Dutch pre-trained BERT model developed at the University of Groningen.
 
 <img src="/bertje.png" height="250">
 
-For details, check out our paper on arXiv: https://arxiv.org/abs/1912.09582
-
+For details, check out our paper on [arXiv](https://arxiv.org/abs/1912.09582), the model on the [🤗 Hugging Face model hub](https://huggingface.co/GroNLP/bert-base-dutch-cased) and related work on [Semantic Scholar](https://www.semanticscholar.org/paper/BERTje%3A-A-Dutch-BERT-Model-Vries-Cranenburgh/a4d5e425cac0bf84c86c0c9f720b6339d6288ffa).
 
 ## Publications with BERTje
 
   - [BERTje: A Dutch BERT Model](https://arxiv.org/abs/1912.09582)
   - [What's so special about BERT's layers? A closer look at the NLP pipeline in monolingual and multilingual models](https://www.aclweb.org/anthology/2020.findings-emnlp.389)
+  - ([40+ papers citing BERTje](https://scholar.google.nl/scholar?cites=17505175191861179083))
 
 
 ## Transformers
