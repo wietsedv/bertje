@@ -52,6 +52,12 @@ model = TFAutoModel.from_pretrained("GroNLP/bert-base-dutch-cased")  # Tensorflo
 
 That's all! Check out the [Transformers documentation](https://huggingface.co/transformers/model_doc/bert.html) for further instructions.
 
+**WARNING:** The vocabulary size of BERTje has changed in 2021. If you use an older fine-tuned model and experience problems with the `GroNLP/bert-base-dutch-cased` tokenizer, use use the following tokenizer:
+
+```python
+tokenizer = AutoTokenizer.from_pretrained("GroNLP/bert-base-dutch-cased", revision="v1")  # v1 is the old vocabulary
+```
+
 ## Benchmarks
 
 The arXiv paper lists benchmarks. Here are a couple of comparisons between BERTje, multilingual BERT, BERT-NL and RobBERT that were done after writing the paper. Unlike some other comparisons, the fine-tuning procedures for these benchmarks are identical for each pre-trained model. You may be able to achieve higher scores for individual models by optimizing fine-tuning procedures.
